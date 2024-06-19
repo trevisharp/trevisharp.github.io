@@ -1,4 +1,4 @@
-function fill(ctx, x, y, wid, hei, color, t)
+const fill = (ctx, x, y, wid, hei, color, t) =>
 {
     for (let j = y; j < y + hei; j += 2)
     {

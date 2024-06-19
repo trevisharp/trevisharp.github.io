@@ -1,10 +1,4 @@
-let dots = [
-    createDot(40, 40),
-    createDot(60, 80),
-    createDot(90, 120),
-    createDot(130, 160),
-    createDot(180, 200)
-]
+let objs = drawText()
 var baseTime = Date.now() / 1000
 var newTime = 0
 var oldTime = 0
@@ -12,10 +6,10 @@ var oldTime = 0
 const draw = ctx =>
 {
     let dt = newTime - oldTime
-    dots.forEach(dot => {
+    objs.dots.forEach(dot => {
         dot.move(dt)
     });
-    dots.forEach(dot => {
+    objs.dots.forEach(dot => {
         dot.draw(ctx, newTime)
     });
 }

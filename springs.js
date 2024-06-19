@@ -1,4 +1,4 @@
-function createDot(x, y) {
+const createDot = (x, y) => {
     let seed = 10 * Math.random()
     let speed = 1 + 2 * Math.random()
     let dx = 0
