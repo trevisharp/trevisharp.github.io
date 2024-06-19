@@ -1,9 +1,9 @@
 let dots = [
     createDot(40, 40),
-    createDot(60, 60),
-    createDot(80, 80),
-    createDot(100, 100),
-    createDot(120, 120)
+    createDot(60, 80),
+    createDot(90, 120),
+    createDot(130, 160),
+    createDot(180, 200)
 ]
 var baseTime = Date.now() / 1000
 var newTime = 0

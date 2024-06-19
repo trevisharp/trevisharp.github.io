@@ -1,5 +1,6 @@
 function createDot(x, y) {
-    let seed = Math.random()
+    let seed = 10 * Math.random()
+    let speed = 1 + 2 * Math.random()
     let dx = 0
     let dy = 0
     return {
@@ -14,8 +15,8 @@ function createDot(x, y) {
                 let di = i - x;
                 let dj = j - y;
                 let r = di * di + dj * dj;
-                let timeFactor = (Math.sin(t + seed) + 1) / 3
-                let force = Math.max(0, 1 -  r / 40 + timeFactor)
+                let timeFactor = (Math.sin(speed * t + seed) + 1) / 3
+                let force = Math.max(0, 1 -  r / 40 + 1.2 * timeFactor)
                 return {
                     red: 255,
                     green: 255,
