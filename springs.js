@@ -29,3 +29,11 @@ const createDot = (x, y) => {
         }
     }
 }
+
+const createSpring = (dotA, dotB) => {
+    return {
+        move: dt => {
+            
+        }
+    }
+}
